@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bjyv82rwa33xd"]
+
+[ext_resource type="Script" uid="uid://de2wvi0nea2ol" path="res://Audio/audio_controller.gd" id="1_5ea0b"]
+[ext_resource type="AudioStream" uid="uid://dh0gnfh7q0ia" path="res://Audio/FreeSFX/GameSFX/Music/Nes Style/Retro Music Loop - PV8 - NES Style 01.wav" id="1_yenca"]
+[ext_resource type="AudioStream" uid="uid://jaxkkn32upai" path="res://Audio/FreeSFX/GameSFX/Bounce Jump/Retro Jump Classic 08.wav" id="2_5ea0b"]
+[ext_resource type="AudioStream" uid="uid://sr4iy4iwyuj0" path="res://Audio/FreeSFX/GameSFX/Music/Success/Retro Success Melody 01 - sawtooth lead 1.wav" id="3_6lkq8"]
+
+[node name="AudioController" type="Node2D" unique_id=1315820272]
+script = ExtResource("1_5ea0b")
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=1440005754]
+stream = ExtResource("1_yenca")
+
+[node name="Jump" type="AudioStreamPlayer" parent="." unique_id=1848898160]
+stream = ExtResource("2_5ea0b")
+pitch_scale = 1.75
+
+[node name="EndLevel" type="AudioStreamPlayer" parent="Jump" unique_id=1631604050]
+stream = ExtResource("3_6lkq8")
+volume_db = 7.0
+pitch_scale = 1.5

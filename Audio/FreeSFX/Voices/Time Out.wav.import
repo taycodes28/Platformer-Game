@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bwt64676rfchs"
+path="res://.godot/imported/Time Out.wav-6eb47b262497f612556983cec1c95b63.sample"
+
+[deps]
+
+source_file="res://Audio/FreeSFX/Voices/Time Out.wav"
+dest_files=["res://.godot/imported/Time Out.wav-6eb47b262497f612556983cec1c95b63.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

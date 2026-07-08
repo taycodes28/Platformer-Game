@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://xj5on6i7bxo0"
+path="res://.godot/imported/Retro Turn Off 12.wav-58967383ae2c6d9439b9d3fa76c1470b.sample"
+
+[deps]
+
+source_file="res://Audio/FreeSFX/GameSFX/z_Various/Retro Turn Off 12.wav"
+dest_files=["res://.godot/imported/Retro Turn Off 12.wav-58967383ae2c6d9439b9d3fa76c1470b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

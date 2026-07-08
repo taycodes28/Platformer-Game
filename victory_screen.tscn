@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://duftxi0uaoacy"]
+
+[ext_resource type="Script" uid="uid://bytburd66eprh" path="res://victory_screen.gd" id="1_rbj82"]
+
+[node name="VictoryScreen" type="Control" unique_id=494038011]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rbj82")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=341220567]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=101955864]
+layout_mode = 0
+offset_left = 356.0
+offset_top = 240.0
+offset_right = 772.0
+offset_bottom = 393.0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1188780615]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 0.9764706)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "You Win ! ! !"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1194712692]
+layout_mode = 2
+
+[node name="PlayAgain" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=221369592]
+layout_mode = 2
+theme_override_font_sizes/font_size = 38
+text = "Play Again"
+
+[node name="StartScreen" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1566591496]
+layout_mode = 2
+theme_override_font_sizes/font_size = 38
+text = "Start Screen"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/PlayAgain" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/StartScreen" to="." method="_on_start_screen_pressed"]
